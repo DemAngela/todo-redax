@@ -11,6 +11,10 @@ export const deleteTodo = (id) => {
     return {type: 'DELETE_TODO', payload: id}
 }
 
-export const editTodo = (todo) => {
-    return {type: 'EDIT_TODO', payload: todo}
+export const editTodo = (id, newTitle) => {
+    return {type: 'EDIT_TODO', payload: id, newTitle}
+}
+
+export const updateTodos = (updatedTodos) => {
+    return { type: 'UPDATE_TODOS', payload: updatedTodos,}
 }

@@ -1,0 +1,22 @@
+.header {
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: #568184;
+}
+
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.headerLink {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+
+.headerLink:hover {
+    color: #3333;
+}

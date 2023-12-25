@@ -1,19 +1,27 @@
-import React, {useState} from 'react';
-import {useDispatch, useSelector} from "react-redux";
+import React, { useState } from 'react';
 
-const EditInput = () => {
-   const [editTitle, setEditTitle] = useState('')
-    const todo = useSelector(s => s.editTodo)
-    const dispatch = useDispatch()
+const EditInput = ({ todoId, handleEdit, setEditedTodo }) => {
+    const [editTitle, setEditTitle] = useState('')
+
+    const handleEditClick = () => {
+        handleEdit(todoId, editTitle);
+        setEditTitle('')
+        setEditedTodo({ id: todoId, title: editTitle })
+    }
+
     return (
-        <div>
+        <div className={'edit-wrapper'}>
             <input
+                className={'todoInput'}
                 onChange={(e) => setEditTitle(e.target.value)}
-                defaultValue={todo.title}
-                type="text"/>
-            <button>OK</button>
+                value={editTitle}
+                type="text"
+            />
+            <button className={'todoBtn'} onClick={handleEditClick}>
+                OK
+            </button>
         </div>
-    );
-};
+    )
+}
 
 export default EditInput;

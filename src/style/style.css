@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #142b3c;
+}
+
+.container  {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.row    {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.col-4 {
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.todo {
+    padding: 30px 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width:100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: #568184 ;
+    border-radius: 20px ;
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.todoBtn {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none   ;
+}
+
+.todoBtn:hover {
+    background-color: #b69c8c;
+}
+
+.todoInput {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.edit-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
